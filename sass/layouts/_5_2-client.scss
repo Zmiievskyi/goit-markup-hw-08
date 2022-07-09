@@ -1,0 +1,28 @@
+
+.client {
+  display: flex;
+  justify-content: center;
+  --item: 6;
+}
+
+.client__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 170px;
+  height: 92px;
+  border: solid 1px rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  color: #afb1b8;
+
+  &:hover {
+    color: $active-color;
+    border: solid 1px $active-color;
+  }
+}
+.client__icon {
+  fill: currentColor;
+}

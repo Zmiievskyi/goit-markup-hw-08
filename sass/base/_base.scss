@@ -1,0 +1,36 @@
+
+/* задаем основной шрифт */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+/* задаем общие классы */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* контейнер */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
