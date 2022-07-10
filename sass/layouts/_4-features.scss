@@ -1,5 +1,9 @@
 .features {
-  padding-top: 47px;
+  display: none;
+  padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .features__title {
