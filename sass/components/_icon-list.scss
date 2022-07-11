@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.icon-list--footer {
+  margin-top: 20px;
+}
+
 .icon-list__item {
   margin-left: 10px;
   width: 44px;
@@ -40,7 +44,7 @@
 }
 
 .icon-list__link--footer {
-  margin-top: 16px;
+  // margin-top: 16px;
 
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
