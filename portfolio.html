@@ -28,7 +28,7 @@
 
   <body>
     <!-- header -->
-     <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
           <a href="index.html" class="logo logo--header">
@@ -36,10 +36,14 @@
           </a>
           <ul class="header__list list">
             <li class="header__nav">
-              <a href="./index.html" class="header__link--nav header__link  link">Студия</a>
+              <a href="index.html" class="header__link--nav header__link link">Студия</a>
             </li>
             <li class="header__nav">
-              <a href="./portfolio.html" class="header__link--nav header__link--current header__link link">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="header__link--nav header__link--current header__link link"
+                >Портфолио</a
+              >
             </li>
             <li class="header__nav">
               <a href="" class="header__link--nav header__link link">Контакты</a>
@@ -65,7 +69,54 @@
               </a>
             </li>
           </ul>
+          <button type="button" class="mob__btn-open">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
         </nav>
+      </div>
+      <div class="mob is-hidden">
+        <div class="mob__wrapper">
+          <ul class="mob__links">
+            <li class="mob__item">
+              <a href="" class="mob__link link mob__current">Студия</a>
+            </li>
+            <li class="mob__item">
+              <a href="./portfolio.html" class="mob__link link">Портфолио</a>
+            </li>
+            <li class="mob__item">
+              <a href="" class="mob__link link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob__list">
+            <li class="mob__cont">
+              <a href="tel:+380961111111" class="mob_phone link"> +38 096 111 11 11 </a>
+            </li>
+            <li class="mob__cont">
+              <a href="mailto:info@devstudio.com" class="mob__email link"> info@devstudio.com </a>
+            </li>
+          </ul>
+          <ul class="mob__soc">
+            <li class="mob__soc-item">
+              <a href="https://www.instagram.com/" class="mob__soc-link link">Instagram</a>
+            </li>
+            <li class="mob__soc-item">
+              <a href="https://twitter.com/" class="mob__soc-link link">Twitter</a>
+            </li>
+            <li class="mob__soc-item">
+              <a href="https://www.facebook.com/" class="mob__soc-link link">Facebook</a>
+            </li>
+            <li class="mob__soc-item">
+              <a href="https://www.linkedin.com/" class="mob__soc-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="mob__btn-close">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main -->
@@ -75,9 +126,11 @@
       <section class="section">
         <div class="container">
           <h1 class="hidden">Примеры</h1>
-           <ul class="filter link">
+          <ul class="filter link">
             <li class="filter__item">
-              <button type="button" class="filter__btn filter__btn--current"><span>Все</span></button>
+              <button type="button" class="filter__btn filter__btn--current">
+                <span>Все</span>
+              </button>
             </li>
             <li class="filter__item">
               <button type="button" class="filter__btn">Веб-сайты</button>
@@ -96,18 +149,41 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                    src="./images/portfolio/portfolio1.jpg"
-                    width="370"
-                    alt="фото первого примера"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/techno-1x.jpg 1x,
+                        ./images/portfolio/desktop/techno-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/techno-1x.jpg 1x,
+                        ./images/portfolio/tablet/techno-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/techno-1x.jpg 1x,
+                        ./images/portfolio/mobile/techno-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/techno-2x.jpg"
+                      width="370"
+                      alt="фото первого примера"
+                    />
+                  </picture>
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="examples__container">
+                <div class="examples__container examples__container--height">
                   <h2 class="examples__tittle">Технокряк</h2>
                   <p class="examples__text">Веб-сайт</p>
                 </div>
@@ -116,16 +192,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                <img
-                  src="./images/portfolio/portfolio2.jpg"
-                  width="370"
-                  alt="фото второго примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/basket-1x.jpg 1x,
+                        ./images/portfolio/desktop/basket-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/basket-1x.jpg 1x,
+                        ./images/portfolio/tablet/basket-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/basket-1x.jpg 1x,
+                        ./images/portfolio/mobile/basket-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/basket-2x.jpg"
+                      width="370"
+                      alt="фото второго примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Постер New Orlean vs Golden Star</h2>
@@ -136,16 +235,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio3.jpg"
-                  width="370"
-                  alt="фото третего примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                 <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/sea-1x.jpg 1x,
+                        ./images/portfolio/desktop/sea-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/sea-1x.jpg 1x,
+                        ./images/portfolio/tablet/sea-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/sea-1x.jpg 1x,
+                        ./images/portfolio/mobile/sea-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/sea-2x.jpg"
+                      width="370"
+                      alt="фото третего примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Ресторан Seafood</h2>
@@ -156,16 +278,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio4.jpg"
-                  width="370"
-                  alt="фото четвертого примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/headphone-1x.jpg 1x,
+                        ./images/portfolio/desktop/headphone-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/headphone-1x.jpg 1x,
+                        ./images/portfolio/tablet/headphone-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/headphone-1x.jpg 1x,
+                        ./images/portfolio/mobile/headphone-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/headphone-2x.jpg"
+                      width="370"
+                      alt="фото 4-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Проект Prime</h2>
@@ -176,16 +321,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio5.jpg"
-                  width="370"
-                  alt="фото пятого примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/box-1x.jpg 1x,
+                        ./images/portfolio/desktop/box-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/box-1x.jpg 1x,
+                        ./images/portfolio/tablet/box-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/box-1x.jpg 1x,
+                        ./images/portfolio/mobile/box-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/box-2x.jpg"
+                      width="370"
+                      alt="фото 5-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Проект Boxes</h2>
@@ -196,16 +364,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio6.jpg"
-                  width="370"
-                  alt="фото шестого примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/monitor-1x.jpg 1x,
+                        ./images/portfolio/desktop/monitor-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/monitor-1x.jpg 1x,
+                        ./images/portfolio/tablet/monitor-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/monitor-1x.jpg 1x,
+                        ./images/portfolio/mobile/monitor-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/monitor-2x.jpg"
+                      width="370"
+                      alt="фото 6-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Inspiration has no Borders</h2>
@@ -216,16 +407,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio7.jpg"
-                  width="370"
-                  alt="фото седьмого примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/book-1x.jpg 1x,
+                        ./images/portfolio/desktop/book-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/book-1x.jpg 1x,
+                        ./images/portfolio/tablet/book-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/book-1x.jpg 1x,
+                        ./images/portfolio/mobile/book-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/book-2x.jpg"
+                      width="370"
+                      alt="фото 7-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Издание Limited Edition</h2>
@@ -236,16 +450,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                  <img
-                  src="./images/portfolio/portfolio8.jpg"
-                  width="370"
-                  alt="фото восьмого примера"
-                />
-                <p>
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                  или частном лице.
-                </p>
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/lab-1x.jpg 1x,
+                        ./images/portfolio/desktop/lab-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/lab-1x.jpg 1x,
+                        ./images/portfolio/tablet/lab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/lab-1x.jpg 1x,
+                        ./images/portfolio/mobile/lab-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/lab-2x.jpg"
+                      width="370"
+                      alt="фото 8-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Проект LAB</h2>
@@ -256,16 +493,39 @@
             <li class="card__set-item">
               <a href="" class="examples link">
                 <div class="card__thumb">
-                    <img
-                    src="./images/portfolio/portfolio9.jpg"
-                    width="370"
-                    alt="фото девятого примера"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/laptop-1x.jpg 1x,
+                        ./images/portfolio/desktop/laptop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
                     />
-                    <p>
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                      или частном лице.
-                    </p>
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/laptop-1x.jpg 1x,
+                        ./images/portfolio/tablet/laptop-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/laptop-1x.jpg 1x,
+                        ./images/portfolio/mobile/laptop-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/desktop/laptop-2x.jpg"
+                      width="370"
+                      alt="фото 9-го примера"
+                    />
+                  </picture>
+                  <p>
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
                 <div class="examples__container">
                   <h2 class="examples__tittle">Growing Business</h2>
@@ -278,7 +538,7 @@
       </section>
     </main>
     <!-- footer -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer__wrapper">
         <div>
           <a href="./index.html" class="logo logo--footer">
@@ -351,5 +611,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,21 +1,18 @@
-
-
-
-
-/*
 .card__set {
   display: flex;
   flex-wrap: wrap;
-
-  margin: calc(-1 * var(--indent) / 2);
+  gap: 30px;
 }
 
 .card__set-item {
-  flex-basis: calc((100% - var(--indent) * var(--item)) / var(--item));
+  @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
 
-  margin: calc(var(--indent) / 2);
+   @media screen and (min-width:1200px) {
+     width: calc((100% - 60px) / 3);
+      } 
 }
-
 
 .card__thumb {
   position: relative;
@@ -40,4 +37,3 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-*/
