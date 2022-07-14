@@ -36,7 +36,7 @@
   width: 100vw;
   height: 100vh;
 
-  padding: 48px 0;
+  padding: 48px 40px;
 }
 
 .mob__wrapper {
@@ -47,12 +47,16 @@
   overflow: auto;
 
   width: 100%;
-  max-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
 .mob__links {
   margin-bottom: auto;
+}
+
+.mob__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob__cont:not(:last-child) {
@@ -90,22 +94,32 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+
+  @media screen and (max-width:479px) {
+    font-size: 24px;
+  }
 }
 
 .mob__soc {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
 
   @media screen and (min-height: 400px) {
     margin-top: 64px;
   }
 }
 
-.mob__soc-item {
+.mob__soc-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob__soc-link {
   color: $active-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }

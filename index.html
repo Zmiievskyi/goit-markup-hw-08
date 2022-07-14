@@ -53,7 +53,7 @@
           <ul class="header__link header__link--cont link">
             <li class="header__cont">
               <a href="mailto:info@devstudio.com" class="header__link--cont header__link link">
-                <svg class="header__icon" width="16" height="16">
+                <svg class="header__icon header__icon--email" width="16" height="16">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -62,7 +62,7 @@
 
             <li class="header__cont">
               <a href="tel:+380961111111" class="header__link--cont header__link link">
-                <svg class="header__icon" width="10" height="16">
+                <svg class="header__icon header__icon--phone" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -133,8 +133,8 @@
       <section class="section benefits">
         <div class="container">
           <h2 class="hidden">список преимуществ</h2>
-          <ul class="benefits__list list ">
-            <li class="benefits__item ">
+          <ul class="benefits__list list">
+            <li class="benefits__item">
               <div class="benefits__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -145,7 +145,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="benefits__item ">
+            <li class="benefits__item">
               <div class="benefits__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
@@ -156,7 +156,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits__item ">
+            <li class="benefits__item">
               <div class="benefits__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -167,7 +167,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefits__item ">
+            <li class="benefits__item">
               <div class="benefits__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -186,7 +186,7 @@
 
       <section class="section features">
         <div class="container">
-          <h2 class="features__title">Чем мы заниdмаемся</h2>
+          <h2 class="features__title">Чем мы занимаемся</h2>
           <ul class="features__links link">
             <li class="features__item">
               <a href="">
@@ -220,8 +220,8 @@
       <section class="section personal">
         <div class="container">
           <h2 class="personal__title">Наша команда</h2>
-          <ul class="personal__list link ">
-            <li class="personal__item ">
+          <ul class="personal__list link">
+            <li class="personal__item">
               <picture>
                 <source
                   srcset="
@@ -273,7 +273,7 @@
                 </ul>
               </div>
             </li>
-            <li class="personal__item ">
+            <li class="personal__item">
               <picture>
                 <source
                   srcset="
@@ -325,7 +325,7 @@
                 </ul>
               </div>
             </li>
-            <li class="personal__item ">
+            <li class="personal__item">
               <picture>
                 <source
                   srcset="
@@ -382,7 +382,7 @@
                 </ul>
               </div>
             </li>
-            <li class="personal__item ">
+            <li class="personal__item">
               <picture>
                 <source
                   srcset="
@@ -446,33 +446,33 @@
       <section class="section">
         <div class="container">
           <h2 class="personal__title">Постоянные клиенты</h2>
-          <ul class="client ">
-            <li class="client__item ">
+          <ul class="client">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo"></use>
               </svg>
             </li>
-            <li class="client__item ">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo-1"></use>
               </svg>
             </li>
-            <li class="client__item ">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo-2"></use>
               </svg>
             </li>
-            <li class="client__item ">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo-3"></use>
               </svg>
             </li>
-            <li class="client__item ">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo-4"></use>
               </svg>
             </li>
-            <li class="client__item ">
+            <li class="client__item">
               <svg class="client__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-logo-5"></use>
               </svg>
@@ -482,7 +482,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer__wrapper">
         <div class="footer__conteiner">
           <a href="./index.html" class="logo logo--footer">
@@ -553,7 +553,7 @@
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
     <!-- modal -->
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
@@ -627,12 +627,14 @@
           </div>
 
           <div class="checkbox">
-            <label for="check" class="checkbox__label"
-              >Соглашаюсь с рассылкой и принимаю
+            <label for="check" class="checkbox__label">
               <input id="check" class="checkbox__input" type="checkbox" />
               <span class="checkbox__icon"></span
             ></label>
-            <a href="" class="checkbox__contract">Условия договора</a>
+            <span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="checkbox__contract">Условия договора</a>
+            </span>
           </div>
           <button type="submit" class="btn modal__btn">Отправить</button>
         </form>

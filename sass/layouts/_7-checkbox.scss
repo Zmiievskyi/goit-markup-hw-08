@@ -22,12 +22,12 @@
 
 .checkbox__icon {
   display: inline-block;
+  flex-shrink: 0;
   width: 16px;
   height: 15px;
   margin-right: 7px;
   border-radius: 2px;
   border: 1.6px solid #000000;
-  transform: translate(0px, 4px);
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -42,7 +42,6 @@
 
 .checkbox__label {
   display: flex;
-  flex-direction: row-reverse;
   align-items: baseline;
   margin-right: 7px;
 }

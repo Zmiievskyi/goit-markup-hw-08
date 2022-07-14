@@ -29,6 +29,10 @@
 .footer__address {
   margin-top: 20px;
   margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .footer__item:not(:last-child) {
@@ -99,7 +103,7 @@ max-width: 480px;
   padding: 20px 15px;
   width: 450px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     width: 100vw;
   }
 
@@ -171,120 +175,3 @@ max-width: 480px;
   fill: #ffff;
   margin-left: 10px;
 }
-/*
-.footer {
-  background: var(--brand-color);
-  padding: 60px 0;
-}
-
-.footer__wrapper {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__address {
-  margin-top: 20px;
-}
-
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.footer__link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:focus,
-  &:hover {
-    color: $active-color;
-  }
-}
-
-
-.footer__icon {
-  margin-left: 70px;
-}
-
-.footer__title {
-  margin-bottom: 20px;
-
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.footer__subscribe {
-  margin-left: auto;
-}
-
-.footer__input {
-  width: 358px;
-  height: 50px;
-  padding: 15px;
-
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.footer__btn {
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #fff;
-  background-color: #2196f3;
-  margin-left: 12px;
-
-  border-radius: 4px;
-  border-color: transparent;
-  width: 200px;
-  height: 50px;
-  padding: 10px 28px;
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-
-  transition: 
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: $active-color;
-    background: $active-color;
-  }
-}
-
-
-.footer__btn-icon {
-  fill: #ffff;
-  margin-left: 10px;
-}
-*/

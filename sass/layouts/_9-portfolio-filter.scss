@@ -13,11 +13,10 @@
   @include tablet {
     max-width: 620px;
     margin: 0 auto;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 
   @include desktop {
-    
     margin-bottom: 50px;
   }
 }
@@ -53,50 +52,3 @@
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/*
-.filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.filter__btn {
-  padding: 6px 22px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-  &:hover,
-  &:focus {
-    color: white;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.filter__btn--current {
-  color: white;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-*/
